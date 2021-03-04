@@ -57,6 +57,10 @@ public class Car {
     }
 
     public void setMileage(int mileage) {
+        if(mileage>=0 && mileage<=5000000)
+            this.mileage = mileage;
+        else
+            throw new IllegalArgumentException("Mileage is not valid, it should be between 0 to 5 million");
     }
 
     public void setPrice(double price) {
