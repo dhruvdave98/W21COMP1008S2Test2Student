@@ -2,6 +2,7 @@
 //Student number : 200456157
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class CarLot {
     private ArrayList<Car> cars;
@@ -25,7 +26,11 @@ public class CarLot {
 
     public ArrayList<Car> getCarsByBrand(String manufacturer)
     {
-        return null;
+        ArrayList<Car> make = new ArrayList<Car>();
+        make.add("Ford");
+        make.add("Honda");
+        make.add("Porsche");
+        return(make);
     }
 
     public ArrayList<Car> getCarsByModel(String model)
