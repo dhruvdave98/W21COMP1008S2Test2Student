@@ -72,6 +72,6 @@ public class Car {
 
     public String toString()
     {
-        return "";
+        return make+" "+model+", with "+mileage+" km - asking $"+price;
     }
 }
