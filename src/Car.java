@@ -40,6 +40,20 @@ public class Car {
     }
 
     public void setModel(String model) {
+        if(make.equals("Ford")){
+            if(model.equals("F150") || model.equals("Escort") || model.equals("Explorer"))
+                this.model = model;
+        }
+        else if(make.equals("Honda")){
+            if(model.equals("Accord") || model.equals("Civic") || model.equals("Pilot"))
+                this.model = model;
+        }
+        else if(make.equals("Porsche")){
+            if(model.equals("911") || model.equals("Cayman") || model.equals("718 Boxster"))
+                this.model = model;
+        }
+        else
+            throw new IllegalArgumentException("it is not valid model");
     }
 
     public void setMileage(int mileage) {
