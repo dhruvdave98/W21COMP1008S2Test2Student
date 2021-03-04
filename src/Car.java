@@ -33,6 +33,10 @@ public class Car {
     }
 
     public void setMake(String make) {
+        if(make.equals("Ford") || make.equals("Honda") || make.equals("Porsche"))
+            this.make = make;
+        else
+            throw new IllegalArgumentException("argument is not valid, it should be 'Ford', 'Honda', 'Porsche'");
     }
 
     public void setModel(String model) {
