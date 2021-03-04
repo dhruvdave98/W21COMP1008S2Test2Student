@@ -35,7 +35,13 @@ public class CarLot {
 
     public ArrayList<Car> getCarsByModel(String model)
     {
-        return null;
+        ArrayList<Car> model = new ArrayList<Car>();
+        model.add("F150");
+        model.add("Accord");
+        model.add("911");
+        model.add("Cayman");
+        model.add("718 Boxster");
+        return(model);
     }
 
     public ArrayList<Car> getCarsBelowPrice(double maxPrice)
